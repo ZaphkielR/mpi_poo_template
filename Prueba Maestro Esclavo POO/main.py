@@ -2,11 +2,11 @@
 Punto de entrada del programa maestro-esclavo con MPI.
 
 Este script es el punto de inicio de la aplicación. Cuando se ejecuta con 
-mpirun (ej: mpirun -n 4 python main.py), MPI crea múltiples procesos que 
+mpirun (ej: mpiexec -n 4 python main.py), MPI crea múltiples procesos que 
 ejecutan este mismo código en paralelo.
 
 Ejecución:
-    mpirun -n <num_procesos> python main.py
+    mpiexec -n <num_procesos> python main.py
     
     - <num_procesos> debe ser >= 2 (1 master + al menos 1 slave)
     - El proceso con rank 0 será el master
